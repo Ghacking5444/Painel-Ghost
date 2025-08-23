@@ -1,46 +1,41 @@
-# Painel de Ferramentas Automatizadas – Uso Ético e Educacional
+## IP-Tracer
 
-## 💡 Sobre o Painel
+IP-Tracer is used to track an ip address. IP-Tracer is developed for Termux and Linux based systems. you can easily retrieve ip address information using IP-Tracer. IP-Tracer use ip-api to track ip address.
 
-Este é um **painel de automação para ferramentas de cibersegurança**, criado com o objetivo de **educar, testar redes próprias** e aprimorar conhecimentos sobre **segurança da informação**. As ferramentas incluídas são voltadas para **testes de penetração éticos**, **demonstrações controladas** e **ambientes de laboratório**.
+<p align="center">
+<img width="47%" src="src/Screenshot_2018-08-06-15-32-17-1.png"/>
+<img width="40%" src="src/Screenshot_2020-05-17-20-52-59-1.png"/>
+</p>
 
-⚠️ **ATENÇÃO:** Todas as ferramentas aqui devem ser usadas **somente com permissão explícita do proprietário da rede ou sistema**. O uso indevido é crime previsto por lei.
+## How to install IP-Tracer ?
 
----
+* `apt update`
 
-## 🧰 Funcionalidades Incluídas
+* `apt install git -y`
 
-- **Teste de Estresse (DDoS Controlado):**
-  - Simula tráfego intenso em servidores próprios para medir resiliência e capacidade de resposta.
-  
-- **Metasploit Framework:**
-  - Ferramenta para testes de penetração, exploração de vulnerabilidades e verificação de segurança em ambientes controlados.
+* `git clone https://github.com/rajkumardusad/IP-Tracer.git`
 
-- **Localização de IP:**
-  - Ferramentas de geolocalização por IP para aprendizado e demonstração de rastreamento de rede, sempre em ambientes educativos ou autorizados.
+* `cd IP-Tracer`
 
-- **Scanner de Vulnerabilidades:**
-  - Detecta falhas comuns em sistemas para que possam ser corrigidas.
+* `chmod +x install`
 
-- **Automação via Scripts Python/Bash:**
-  - Executa testes ou ações em lote, agilizando processos comuns de auditoria.
+* `sh install` or `./install`
 
----
 
-## 🛠️ Requisitos
+## How to use IP-Tracer
 
-- Linux (Ubuntu, Kali, Debian)
-- Termux (Android)
-- Windows 10/11 com WSL ou Git Bash
-- Python 3.x
-- Git
+* `trace -m` to track your own ip address.
 
----
+* `trace -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
 
-## 🔧 Instalação
+* `trace` for more information.
 
-```bash
-git clone https://github.com/Ghacking5444/Painel-Ghost.git
-cd Painel-Ghost
-chmod +x main.py
-./main.py
+**OR**
+
+* `ip-tracer -m` to track your own ip address.
+
+* `ip-tracer -t target-ip` to track other's ip address for example `ip-tracer -t 127.0.0.1`
+
+* `ip-tracer` for more information.
+
+**This project is not actively maintained.**
